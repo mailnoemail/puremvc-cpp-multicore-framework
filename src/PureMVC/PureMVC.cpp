@@ -27,6 +27,7 @@ extern "C" WINBASEAPI BOOL WINAPI TryEnterCriticalSection(LPCRITICAL_SECTION);
 #include <pthread.h>
 #include <errno.h>
 #include <sys/time.h>
+#include <unistd.h>
 typedef pthread_mutex_t puremvc_mutex_t;
 typedef pthread_mutex_t puremvc_fast_mutex_t;
 typedef std::pair<pthread_t, std::pair<bool, pthread_cond_t> > puremvc_thread_t;
